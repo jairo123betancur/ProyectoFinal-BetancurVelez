@@ -1,0 +1,19 @@
+[
+    { "id": 1, "name": "Laptop", "price": 800 },
+    { "id": 2, "name": "Smartphone", "price": 500 },
+    { "id": 3, "name": "Tablet", "price": 300 },
+    { "id": 4, "name": "Smartwatch", "price": 150 },
+    { "id": 5, "name": "Headphones", "price": 80 },
+    { "id": 6, "name": "Wireless Mouse", "price": 30 },
+    { "id": 7, "name": "External Hard Drive", "price": 120 },
+    { "id": 8, "name": "Gaming Console", "price": 400 },
+    { "id": 9, "name": "Printer", "price": 200 },
+    { "id": 10, "name": "Camera", "price": 600 }
+]
+
+
+
+
+
+
+
