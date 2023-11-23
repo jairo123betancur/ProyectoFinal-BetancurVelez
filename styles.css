@@ -93,7 +93,7 @@ main {
     object-fit: cover; 
 }
 .product-card p {
-    max-height: 4.5em; /* Ajusta el valor según el tamaño de fuente y la línea deseada */
+    max-height: 4.5em; 
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -116,6 +116,14 @@ button:hover {
     transition: visibility 0s, opacity 0.5s ease;
 }
 /* Nuevos estilos para el menú de categorías */
+.categoria{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 14px;
+    padding: 10px;
+    background-color: #EEEEEE;
+}
 .category-menu {
     display: flex;
     justify-content: space-around;
@@ -123,6 +131,8 @@ button:hover {
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;
+    gap: 10px;
+    align-items: center;
 }
 
 .category-item {
@@ -141,7 +151,7 @@ button:hover {
 }
 
 .category-item:hover {
-    background-color: #ddd;
+    background-color: #000000;
 }
 
 /* Estilos para el carrito */
@@ -206,7 +216,7 @@ button:hover {
 #checkout-form-section{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 120px;
     width: 100%;
     align-items: center;
 }

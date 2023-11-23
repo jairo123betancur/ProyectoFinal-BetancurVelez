@@ -1,4 +1,4 @@
-// app.js
+
 let products = [];
 let cart = [];
 
@@ -165,7 +165,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkoutForm = document.getElementById('checkout-form');
     const confirmarPedidoBtn = document.getElementById('confirmar-pedido-btn');
     
+   
+    const nameInput = document.getElementById('name');
+    const addressInput = document.getElementById('address');
+    const emailInput = document.getElementById('email');
 
+ 
+    const datosPreCargados = {
+        nombre: "Andres Betancur",
+        direccion: "Calle Principal 123",
+        email: "andres@example.com"
+    };
+
+
+    nameInput.value = datosPreCargados.nombre;
+    addressInput.value = datosPreCargados.direccion;
+    emailInput.value = datosPreCargados.email;
 
     fetch('https://fakestoreapi.com/products/categories')
         .then(res => res.json())
@@ -194,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     confirmarPedidoBtn.addEventListener('click', () => {
         checkoutFormSection.classList.remove('hidden');
         checkoutForm.classList.remove('hidden');
-        // Hacer scroll hasta la sección del formulario
+   
         checkoutFormSection.scrollIntoView({ behavior: 'smooth' });
     });
     
